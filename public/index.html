@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--index-->
+<html>
+
+<head>
+    <title>線上器材租借申報系統</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="icon" href="./img/favicon.ico" type="image/vnd.microsoft.icon" />
+</head>
+
+<body>
+    <h1>器材租借</h1>
+    密碼ver. v.0.0.5
+    <div id="logInPage" style="background-color: bisque; width: 90%;">
+        <p>
+            <label>Email: </label>
+            <input type="email" id="email">
+        </p>
+        <p>
+            <label>Password: </label>
+            <input type="password" id="password">
+            &emsp;
+            <input type="button" id="logIn" value="log in">
+        </p>
+
+    </div>
+    <div id="showStat" style="display: none; width: 90%; background-color: aquamarine; margin: 0;">
+        <p>
+            <label>Stat: </label>
+            <label id="stat"></label>
+        </p>
+        <p>
+            <label>Car: </label>
+            <label id="car"></label>
+        </p>
+        <p>
+            <select id="mySelect">
+                <option value=null>--none--</option>
+            </select>
+            &emsp;
+            <input type="button" value="submit" id="submit">
+        </p>
+    </div>
+    <script src="./src/index.bundle.js"></script>
+</body>
+
+</html>
